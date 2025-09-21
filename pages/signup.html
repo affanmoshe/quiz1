@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun - AsuransiKu</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/signup.css">
+
+    <!-- google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="btn btn-primary">Daftar</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="form-page">
+
+        <div class="form-container">
+            <h2>Buat Akun Baru</h2>
+            <p>Daftar untuk menemukan produk asuransi terbaik.</p>
+            <div id="message-container"></div>
+            <form id="signup-form" novalidate>
+
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Handphone</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Contoh: 081234567890">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Kata Sandi</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Daftar</button>
+
+            </form>
+            <p class="form-switch">Sudah punya akun? <a href="login.html">Login di sini</a></p>
+        </div>
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="form-footer">
+        <p>&copy; FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+    <script src="../logics/auth.js"></script> 
+</body>
+</html>

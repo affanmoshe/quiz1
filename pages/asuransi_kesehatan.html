@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuransi Kesehatan - AsuransiKu</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu"></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="product-detail-container">
+            <!-- Deskripsi Produk -->
+            <div class="product-description">
+                <i class="fas fa-heartbeat product-icon"></i>
+                <h1>Asuransi Kesehatan</h1>
+                <p>Lindungi diri Anda dan keluarga dari risiko finansial akibat sakit atau kecelakaan. Dapatkan akses ke ribuan rumah sakit rekanan terbaik di seluruh Indonesia dengan premi yang terjangkau.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Perlindungan rawat inap dan rawat jalan</li>
+                    <li><i class="fas fa-check-circle"></i> Manfaat santunan tunai harian</li>
+                    <li><i class="fas fa-check-circle"></i> Proses klaim mudah dan cepat secara online</li>
+                </ul>
+            </div>
+
+            <!-- Kalkulator Premi -->
+            <div class="calculator-container">
+                <h2>Hitung Premi Anda</h2>
+                <form id="kalkulator-kesehatan">
+                    <div class="form-group">
+                        <label for="tanggal-lahir">Tanggal Lahir</label>
+                        <input type="date" id="tanggal-lahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Apakah Anda Merokok?</label>
+                        <div class="radio-group">
+                            <input type="radio" id="merokok-ya" name="merokok" value="1" required><label for="merokok-ya">Ya</label>
+                            <input type="radio" id="merokok-tidak" name="merokok" value="0" required><label for="merokok-tidak">Tidak</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Riwayat Hipertensi?</label>
+                         <div class="radio-group">
+                            <input type="radio" id="hipertensi-ya" name="hipertensi" value="1" required><label for="hipertensi-ya">Ya</label>
+                            <input type="radio" id="hipertensi-tidak" name="hipertensi" value="0" required><label for="hipertensi-tidak">Tidak</label>
+                        </div>
+                    </div>
+                     <div class="form-group">
+                        <label>Riwayat Diabetes?</label>
+                         <div class="radio-group">
+                            <input type="radio" id="diabetes-ya" name="diabetes" value="1" required><label for="diabetes-ya">Ya</label>
+                            <input type="radio" id="diabetes-tidak" name="diabetes" value="0" required><label for="diabetes-tidak">Tidak</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Hitung Premi</button>
+                </form>
+                <div id="hasil-premi" class="hasil-premi-container" style="display: none;">
+                    <h3>Estimasi Premi Tahunan Anda:</h3>
+                    <p id="harga-premi" class="harga-premi"></p>
+                    <button id="tombol-beli" class="btn btn-primary btn-full">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+    <script src="../logics/logic.js"></script>
+</body>
+</html>

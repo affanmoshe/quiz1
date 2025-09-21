@@ -1,0 +1,60 @@
+.profile-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.profile-avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.profile-page {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    min-height: calc(100vh - 160px); 
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+    color: var(--dark-color);
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.profile-details strong {
+    color: var(--dark-color);
+}
+
+#logout-btn-profile {
+    margin-top: 20px;
+    background-color: #e74c3c;
+}
+
+#logout-btn-profile:hover {
+    background-color: #c0392b;
+}

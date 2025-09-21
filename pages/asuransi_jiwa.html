@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuransi Jiwa - AsuransiKu</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu"></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="product-detail-container">
+            <!-- Deskripsi Produk -->
+            <div class="product-description">
+                <i class="fas fa-shield-alt product-icon"></i>
+                <h1>Asuransi Jiwa</h1>
+                <p>Jamin masa depan finansial keluarga Anda saat hal tak terduga terjadi. Uang Pertanggungan (UP) hingga miliaran rupiah untuk memastikan impian keluarga tetap terwujud.</p>
+                 <ul>
+                    <li><i class="fas fa-check-circle"></i> Premi tetap selama masa pertanggungan</li>
+                    <li><i class="fas fa-check-circle"></i> Manfaat meninggal dunia karena sakit atau kecelakaan</li>
+                    <li><i class="fas fa-check-circle"></i> Pilihan Uang Pertanggungan yang fleksibel</li>
+                </ul>
+            </div>
+
+            <!-- Kalkulator Premi -->
+            <div class="calculator-container">
+                <h2>Hitung Premi Anda</h2>
+                <form id="kalkulator-jiwa">
+                    <div class="form-group">
+                        <label for="tanggal-lahir-jiwa">Tanggal Lahir</label>
+                        <input type="date" id="tanggal-lahir-jiwa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="uang-pertanggungan">Pilih Uang Pertanggungan</label>
+                        <select id="uang-pertanggungan" required>
+                            <option value="">-- Pilih Jumlah --</option>
+                            <option value="1000000000">Rp 1.000.000.000</option>
+                            <option value="2000000000">Rp 2.000.000.000</option>
+                            <option value="3500000000">Rp 3.500.000.000</option>
+                            <option value="5000000000">Rp 5.000.000.000</option>
+                            <option value="10000000000">Rp 10.000.000.000</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Hitung Premi</button>
+                </form>
+                 <div id="hasil-premi" class="hasil-premi-container" style="display: none;">
+                    <h3>Estimasi Premi Bulanan Anda:</h3>
+                    <p id="harga-premi" class="harga-premi"></p>
+                    <button id="tombol-beli" class="btn btn-primary btn-full">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+    <script src="../logics/logic.js"></script>
+</body>
+</html>

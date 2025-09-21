@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asuransi Mobil - AsuransiKu</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu"></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="product-detail-container">
+            <!-- Deskripsi Produk -->
+            <div class="product-description">
+                <i class="fas fa-car product-icon"></i>
+                <h1>Asuransi Mobil</h1>
+                <p>Berikan perlindungan terbaik bagi mobil kesayangan Anda dari risiko kerusakan, kecelakaan, hingga kehilangan. Kami menyediakan perlindungan All Risk dan Total Loss Only (TLO).</p>
+                 <ul>
+                    <li><i class="fas fa-check-circle"></i> Ganti rugi untuk kerusakan sebagian dan total</li>
+                    <li><i class="fas fa-check-circle"></i> Jaringan bengkel yang luas dan terpercaya</li>
+                    <li><i class="fas fa-check-circle"></i> Layanan darurat 24 jam di seluruh INdonesia</li>
+                </ul>
+            </div>
+
+            <!-- Kalkulator Premi -->
+            <div class="calculator-container">
+                <h2>Hitung Premi Anda</h2>
+                <form id="kalkulator-mobil">
+                    <div class="form-group">
+                        <label for="harga-mobil">Harga Mobil (Rp)</label>
+                        <input type="number" id="harga-mobil" placeholder="Contoh: 250000000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tahun-mobil">Tahun Pembuatan Mobil</label>
+                        <input type="number" id="tahun-mobil" placeholder="Contoh: 2022" min="1990" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Hitung Premi</button>
+                </form>
+                 <div id="hasil-premi" class="hasil-premi-container" style="display: none;">
+                    <h3>Estimasi Premi Tahunan Anda:</h3>
+                    <p id="harga-premi" class="harga-premi"></p>
+                    <button id="tombol-beli" class="btn btn-primary btn-full">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+    <script src="../logics/logic.js"></script>
+</body>
+</html>

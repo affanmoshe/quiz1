@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pengguna - AsuransiKu</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    
+    <!-- google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header section -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu">
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="profile-card">
+                <h1>Profil Anda</h1>
+                <div class="profile-info">
+                    <p><strong>Nama:</strong> <span id="profile-name">Memuat...</span></p>
+                    <p><strong>Email:</strong> <span id="profile-email">Memuat...</span></p>
+                </div>
+                <button id="logout-btn-profile" class="btn btn-secondary">Logout</button>
+            </div>
+
+            <!-- Bagian Riwayat Transaksi -->
+            <div class="history-card">
+                <h2>Riwayat Transaksi Anda</h2>
+                <div class="table-container">
+                    <table id="history-table">
+                        <thead>
+                            <tr>
+                                <th>Nama Produk</th>
+                                <th>Jenis</th>
+                                <th>Tanggal Pembelian</th>
+                                <th>Harga Premi</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-table-body">
+                            <!-- Data riwayat akan diisi oleh JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                <p id="no-history-message" style="display: none; text-align: center; padding: 20px;">
+                    Belum ada riwayat transaksi.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2025 FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+</body>
+</html>
+

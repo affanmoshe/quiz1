@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styling/style.css">
+    <link rel="stylesheet" href="../styling/login.css">
+
+    <!-- google fonts poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- import icons from font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- header section -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Form<span class="logo-span">Insurance</span></a>
+            <div class="nav-menu" id="nav-menu">
+            </div>
+        </nav>
+    </header>
+
+    <!-- main content -->
+    <main class="form-page">
+        <div class="form-container">
+            <h2>Selamat Datang Kembali</h2>
+            <p>Silakan masuk untuk melanjutkan</p>
+            <div id="message-container"></div>
+            <form id="login-form" novalidate>
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Kata Sandi</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Login</button>
+            </form>
+            <p class="form-switch">Belum punya akun? <a href="signup.html">Daftar di sini</a></p>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer class="form-footer">
+        <p>&copy; FormInsurance</p>
+    </footer>
+
+    <script src="../logics/script.js"></script>
+    <script src="../logics/auth.js"></script> 
+</body>
+</html>
+
